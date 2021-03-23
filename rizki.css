@@ -1,219 +1,283 @@
 /* Reset CSS (JANGAN DIHAPUS) */
-html, body,
-ul, ol, li,
-h1, h2, h3, h4, h5, h6, p,
-form, input, div {
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+form,
+input,
+div {
   margin: 0;
   padding: 0;
 }
 
-
 body {
   font-family: "Avenir Next";
 }
-
+header {
+  height: 65px;
+  width: 100%;
+  background-color: rgba(34, 49, 52, 0.9);
+  position: fixed;
+  top: 0;
+  z-index: 10;
+}
+.container {
+  max-width: 1170px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.icon {
+  padding-right: 3px;
+}
+/* header pengganti */
+.muriz {
+  color: white;
+  padding: 15px;
+  transition: all 0.5s ease;
+}
+.muriz:hover {
+  transform: translate(10%, 0);
+}
 li {
   list-style: none;
 }
-.naruto{
-  width:25%;
-  overflow: hidden;
-  padding:10px;
-  margin-left: 35%;
+.header-left {
+  float: left;
 }
-.naruto img{
-  transition: all 0.4s ease;
-  width:100%;
-  visibility:
+/* Clearfix  Menu*/
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
 }
-.naruto img:hover{
-  transform: scale(1.5);
+.clearfix:after {
+  clear: both;
 }
-.ja{
-  position: absolute;
-  transition: all 0.4s ease;
-  text-align: center; 
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  margin-left: 42%;
+.clearfix {
+  *zoom: 1;
 }
-.ja:hover{
-  background-color: yellow;
-  padding:10px;
-  text-align: center; 
-  border-radius: 10px;
-  width: 15%;
-}
-/* Ketik code Anda dibawah */
-nav{
-  width:100%;
-  height:90px;
-  background-color:#26d0c9;
-  font-family:#fff;
-  color:white;
-  cursor:default;
-  font-family:arial;
+/* Menu*/
+nav {
+  float: right;
+  height: 65px;
+  width: 415px;
+  padding: 10px;
+  font-size: 12pt;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-weight: bold;
   position: relative;
 }
-nav .container{
-  width: 100%;
-  margin: 0;
-  position: fixed;
-  z-index:10;
-  height:90px;
-  background-color:#26d0c9;
-  font-family:#fff;
-  color:white;
-  cursor:default;
-  font-family:arial;
-  transition: all 0.5s ease;
+nav ul {
+  padding: 0;
+  margin: 0 auto;
+  width: 500px;
+  height: 40px;
 }
-nav h1{
-  font-size:36px;
-  padding:20px 40px;
-  float:left;
+nav li {
+  display: inline;
+  float: left;
+  margin-right: 4px;
 }
-nav h1:hover{
-  border-bottom:2px solid red;
+nav a {
+  color: #ffffff;
+  display: inline-block;
+  width: 100px;
+  text-align: center;
+  text-decoration: none;
+  line-height: 40px;
+  padding-left: -10px;
 }
-nav p{
-  padding:33px 20px;
-  float:left;
-  transition:all 0.4s ease;
+nav ul li a {
+  padding-left: 40px;
 }
-nav p:hover{
-  color:red;
-  font-size:30px;
-  transform:scale(1.2);
+nav a:hover,
+nav a:active {
+  background-color: #ecf0f1;
+  color: #333;
+  padding-left: 40px;
 }
-nav a{
-  padding:33px 20px;
-  float:left;
+nav a#pull {
+  display: none;
 }
-.efek a{
+a {
   text-decoration: none;
 }
-.efek{
-            font-size: 20px;
-            width: 100%;
-            white-space:nowrap;
-            overflow:hidden;
-            -webkit-animation: bebas 5s steps(50, end);
-            animation: bebas 5s steps(50, end);
-        }
-        @keyframes bebas{
-            from { width: 0; }
-        }
-        @-webkit-keyframes bebas{
-            from { width: 0; }
-        }
-.main{
-  margin:100px 80px 0 80px;
+
+.clear {
+  clear: left;
 }
-.main h1{
-  font-size:140px;
+
+/* KODINGAN AWAL */
+.efek a {
+  text-decoration: none;
 }
-.main span{
-  color:red;
+.efek {
+  font-size: 20px;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  -webkit-animation: bebas 5s steps(50, end);
+  animation: bebas 5s steps(50, end);
 }
-.main h2{
-  font-size:60px;
+@keyframes bebas {
+  from {
+    width: 0;
+  }
 }
-.top{
-  margin:100px 80px;
-  height:500px;
+@-webkit-keyframes bebas {
+  from {
+    width: 0;
+  }
 }
-.top h3{
-  font-size:28px;
-  padding-bottom:15px;
-  border-bottom:2px solid #dee7ec;
-  transition:all 0.4s ease;
+.section1 {
+  padding-top: 4rem;
 }
-.top h3:hover{
-  transform:scale(1.1);
+.main {
+  margin: 100px 80px 0 80px;
 }
-figure img{
-  border-radius:10px;
-  transition:all 0.4s ease;
+.main h1 {
+  font-size: 80px;
+  margin-right: 50px;
+  margin-top: 40px;
 }
-figure img:hover{
-  transform:scale(1.1);
-  border-top:10px solid blue;
-  border-bottom:10px solid blue;;
+.main span {
+  color: red;
 }
-figure{
-  float:left;
-  margin:50px 40px 0 0;
+.main h2 {
+  font-size: 60px;
 }
-figcaption{
-  font-size:24px;
-  padding-top:30px;
-  transition:all 0.4s ease;
-  cursor:default;
+.top {
+  margin: 100px 80px;
+  height: 500px;
 }
-figcaption:hover{
-  background-color:yellow;
-  border-radius:10px;
-  padding:10px;
-  margin-top:30px;
+/* Gelombang 1&2 */
+.jas {
+  width: 100%;
+  position: relative;
+  height: 200px;
 }
-.form1{
-  margin:100px 80px;
+.jaya {
+  width: 100%;
+  position: relative;
+  top: -180px;
 }
-.form1 h3{
-  border-bottom:2px solid #dee7ec;
-  padding-bottom:15px;
-  font-size:28px;
-  margin-bottom:50px;
+/* Akhir */
+.gelombang {
+  background-color: #0099ff;
+  position: relative;
+  width: 100%;
+  height: 550px;
 }
-form p{
-  padding-bottom:10px;
+.top h3 {
+  font-size: 28px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid #dee7ec;
+  transition: all 0.4s ease;
 }
-form input[type="email"],textarea{
-  padding:20px;
-  margin-bottom:30px;
-  border:1px solid #dee7ec;
-  width:400px;
-  border-radius:10px;
+.top h3:hover {
+  transform: scale(1.1);
 }
-textarea:focus{
-  overflow:scroll;
+figure img {
+  border-radius: 10px;
+  transition: all 0.4s ease;
 }
-form input[type="email"]:hover,textarea:hover{
-  background-color:rgba(15,115,115,0.1);
+figure img:hover {
+  transform: scale(1.1);
+  border-top: 10px solid blue;
+  border-bottom: 10px solid blue;
 }
-form input[type="submit"]{
-  padding:20px 40px;
-  font-size:18px;
-  background-color:#dee7ec;
-  color:#889eab;
-  border:1px solid #dee7ec;
-  margin-bottom:30px;
-  width:400px;
-  border-radius:10px;
-  box-shadow:0 10px;
+figure {
+  float: left;
+  margin: 50px 40px 0 0;
 }
-form input[type="submit"]:hover{
-  background-color:rgba(25,225,225,0.9);
+figcaption {
+  font-size: 24px;
+  padding-top: 30px;
+  transition: all 0.4s ease;
+  cursor: default;
 }
-form input[type="submit"]:active{
-  box-shadow:none;
-  top:10px;
-  position:relative;
+figcaption:hover {
+  position: relative;
+  background-color: yellow;
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 30px;
 }
-footer{
-  height:200px;
-  background-color:#2f5167;
-  color:#fff;
-}  
-.footer-text{
-   float:left;
-   font-size:32px;
-   padding:40px;
-}  
-.footer-right{
-  float:right;
-  padding:40px;
+.form1 {
+  margin: 100px 80px;
+  text-align: center;
 }
-.footer-right li{
-  padding-bottom:20px;
+.form1 h3 {
+  border-bottom: 2px solid #dee7ec;
+  padding-bottom: 15px;
+  font-size: 48px;
+  margin-bottom: 50px;
+}
+form p {
+  padding-bottom: 10px;
+  font-size: 20px;
+}
+form input[type="email"],
+textarea {
+  padding: 20px;
+  margin-bottom: 30px;
+  border: 1px solid aqua;
+  width: 500px;
+  border-radius: 10px;
+}
+textarea:focus {
+  overflow: scroll;
+}
+form input[type="email"]:hover,
+textarea:hover {
+  background-color: rgba(15, 115, 115, 0.1);
+}
+form input[type="submit"] {
+  padding: 20px 40px;
+  font-size: 18px;
+  background-color: #dee7ec;
+  color: #889eab;
+  border: 1px solid #dee7ec;
+  margin-bottom: 30px;
+  width: 500px;
+  border-radius: 10px;
+  box-shadow: 0 10px;
+}
+form input[type="submit"]:hover {
+  background-color: rgba(9, 10, 10, 0.9);
+}
+form input[type="submit"]:active {
+  box-shadow: none;
+  top: 10px;
+  position: relative;
+}
+footer {
+  height: 200px;
+  background-color: #2f5167;
+  color: #fff;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+}
+footer p {
+  font-size: 2rem;
+  text-align: center;
+  padding-top: 100px;
+}
+.love {
+  color: red;
+}
+.tulisan {
+  color: black;
 }
