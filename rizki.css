@@ -23,7 +23,7 @@ div {
 }
 
 body {
-  font-family: "Avenir Next";
+  font-family: 'Avenir Next';
 }
 header {
   height: 65px;
@@ -59,7 +59,7 @@ li {
 /* Clearfix  Menu*/
 .clearfix:before,
 .clearfix:after {
-  content: " ";
+  content: ' ';
   display: table;
 }
 .clearfix:after {
@@ -75,7 +75,7 @@ nav {
   width: 415px;
   padding: 10px;
   font-size: 12pt;
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: 'PT Sans', Arial, sans-serif;
   font-weight: bold;
   position: relative;
 }
@@ -229,7 +229,7 @@ form p {
   padding-bottom: 10px;
   font-size: 20px;
 }
-form input[type="email"],
+form input[type='email'],
 textarea {
   padding: 20px;
   margin-bottom: 30px;
@@ -240,11 +240,11 @@ textarea {
 textarea:focus {
   overflow: scroll;
 }
-form input[type="email"]:hover,
+form input[type='email']:hover,
 textarea:hover {
   background-color: rgba(15, 115, 115, 0.1);
 }
-form input[type="submit"] {
+form input[type='submit'] {
   padding: 20px 40px;
   font-size: 18px;
   background-color: #dee7ec;
@@ -255,10 +255,10 @@ form input[type="submit"] {
   border-radius: 10px;
   box-shadow: 0 10px;
 }
-form input[type="submit"]:hover {
+form input[type='submit']:hover {
   background-color: rgba(9, 10, 10, 0.9);
 }
-form input[type="submit"]:active {
+form input[type='submit']:active {
   box-shadow: none;
   top: 10px;
   position: relative;
